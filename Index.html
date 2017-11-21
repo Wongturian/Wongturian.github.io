@@ -1,1 +1,627 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="style5.css" rel="stylesheet" type="text/css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "amukti", sans-serif}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
 
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #ff0000;
+    color: white;
+    text-shadow: 0px 5px 5px #000;
+}
+
+.next {
+    background-color: #468284;
+    color: white;
+    text-shadow: 0px 5px 5px #000;
+}
+
+.round {
+    border-radius: 50%;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #ff0000;
+    color: white;
+    text-shadow: 0px 5px 5px #000;
+}
+
+.next {
+    background-color: #468284;
+    color: white;
+    text-shadow: 0px 5px 5px #000;
+}
+
+.round {
+    border-radius: 50%;
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+.atas {position:fixed;right:1.5%;bottom:5%; 
+background-color:#fff; 
+font-size:1em; 
+font-weight:350; 
+border-left:1px solid #333; 
+box-shadow:1px 1px 2px #000; 
+-webkit-border-radius:20px; 
+-moz-border-radius:20px; 
+border-radius:20px; 
+display:inline; 
+padding:3px; 
+}
+.atas a { 
+color:#333; 
+text-decoration:none; 
+border-left:1px solid #555; 
+-webkit-border-radius:20px; 
+-moz-border-radius:20px; 
+border-radius:20px; 
+box-shadow:2px 2px 4px #000; 
+}
+.atas:hover { 
+border:1px solid #555; 
+box-shadow:2px 2px 4px transparent; 
+}
+#anim { 
+ animation: animation_name 1s infinite; 
+} 
+ 
+@-webkit-keyframes animation_name { 
+ from { 
+  border: 1px solid green; 
+ } 
+ to { 
+  border: 10px dotted red; 
+ } 
+} 
+ 
+@keyframes animation_name { 
+ from { 
+  box-shadow: 0px 0px 0px #888888; 
+ } 
+ to { 
+  box-shadow: 10px 10px 5px #888888; 
+ } 
+} 
+</style>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Multimedia Jawa</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account"><img src="/w3images/avatar2.png" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Kaca Utama</a>
+  <a href="index-1.html" class="w3-bar-item w3-button w3-padding-large">Kamus Jawa Kuna</a>
+  <a href="index-2.html" class="w3-bar-item w3-button w3-padding-large">Sinau Nulis Jawa</a>
+  <a href="lkj/lkj/muslih.html" class="w3-bar-item w3-button w3-padding-large">LKJ</a>  <a href="index-3.html" class="w3-bar-item w3-button w3-padding-large">Sinau Nulis Kawi</a>
+  <a href="index-4.html" class="w3-bar-item w3-button w3-padding-large">Sinau Nulis Sanskrit</a>
+  <a href="index-5.html" class="w3-bar-item w3-button w3-padding-large">Diajar Aksara Sunda</a>
+  <a href="index-6.html" class="w3-bar-item w3-button w3-padding-large">Gêguritan</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+        <br>
+         <h4 class="w3-center">My Profile</h4>
+<div id="headbox">
+<h2> <p align="center"><font color="#000000"><div style="margin-top:5px; text-align:center; color:#384B51;text-shadow:0px 4px 3px #000; font-size:21px;" id="clock"></div>
+</font></h2></div>
+         <p class="w3-center"><img src="images/kamus.png" class="w3-normal" style="height:106px;width:106px" alt="Avatar"></p>
+<script type="text/javascript">
+<!--
+function startTime() {
+	var today=new Date(),
+		curr_hour=today.getHours(),
+		curr_min=today.getMinutes(),
+		curr_sec=today.getSeconds();
+ curr_hour=checkTime(curr_hour);
+	curr_min=checkTime(curr_min);
+	curr_sec=checkTime(curr_sec);
+	document.getElementById('clock').innerHTML=curr_hour+":"+curr_min+":"+curr_sec;
+}
+function checkTime(i) {
+	if (i<10) {
+		i="0" + i;
+	}
+	return i;
+}
+setInterval(startTime, 500);
+//-->
+</script>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Bagus Aji Pamungkas</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Turian</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> Oktober 1, 2017</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Atur Prawacana</button>
+          <div id="Demo1" class="w3-hide w3-container">
+          <p class="w3-center"><img src="images/b1.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+          <center><h2>السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ.<br>ꦥꦸꦗꦶꦱꦸꦏꦸꦫꦶꦁꦔꦫ꧀ꦰꦤꦶꦁꦒꦸꦱ꧀ꦠꦶꦄꦭ꧀ꦭꦴꦃ<br>ꦅꦔ꧀ꦏꦁꦩꦲꦮꦼꦭꦱ꧀ꦩꦲꦴꦱꦶꦃ</center>
+            <p style="text-indent:0.5in;"> ﷽‎  Alḥamdulillaāh, puji syukur kulå aturakên ing ngarsanipun Gusti Allah Ingkang Maha Agung awít saking raḥmat lan kuwasanipún, kulå sagêd ngrampungakênn APLIKASI punikå kanthi saé sanadyan taksih kathah kakiranganipún. Botên kasupèn kulå aturakênn matur sêmbah nuwun íngkang tanpå. upami kagêm tiyang sêpuh kakalíh kawulå íngkang tansah paring dongå pangèstu såhå pårå dwijå ingkang sampun paring pintên-pintên kawruh lan sêsêrêpan saéngga APLIKASI punikå saged purna.</p>
+            <p style="text-indent: 0.5in; ">Mugi-mugi APLIKASI punika sagêd migunani tumrap pårå kadang kinasíh sadåyå ingkang sami gugulang basa lan akṣaranipún.<br>
+            Kula minangka pangríptå ugi taksih kathah kakirangan, pramila panyaruwé såhå panyampúrnå sakíng panjênêngan sadåyå tansah kula antu-antu... Nuwún 🙏🙏🙏 </p>
+            <p align="right"> Turian, 25 Juli 2017<br>Wong_Turian</p>
+       		</div>
+        <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> W.J.S Poerwa Darminta</button>
+        <div id="Demo2" class="w3-hide w3-container">
+        <p class="w3-center"><img src="images/poer.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+.atas {position:fixed;left:3%;bottom:10%; 
+background-color:#fff; 
+font-size:2em; 
+font-weight:700; 
+border-left:2px solid #333; 
+box-shadow:2px 2px 4px #000; 
+-webkit-border-radius:50px; 
+-moz-border-radius:50px; 
+border-radius:50px; 
+display:inline; 
+padding:6px; 
+}
+.atas a { 
+color:#333; 
+text-decoration:none; 
+border-left:1px solid #555; 
+-webkit-border-radius:50px; 
+-moz-border-radius:50px; 
+border-radius:50px; 
+box-shadow:2px 2px 4px #000; 
+}
+.atas:hover { 
+border:1px solid #555; 
+box-shadow:2px 2px 4px transparent; 
+}
+        <center><h4>Wilfridus Josephus Sabarija Poerwadarminta</h4></center>
+        <p style="text-text-indent: 0.5in;">Lahir di Yogyakarta pada tanggal 12 September 1904 dan meninggal di Yogyakarta pada tanggal 28 November 1968. Beliau adalah salah satu tokoh sastra Indonesia, ahli perkamusan, dan penulis kamus-kamus bahasa Indonesia, Jawa, Kawi, dan lain-lain. Ia juga menggunakan nama samaran Ajirabas, Semplak atau Sabarija.</p>
+        <p style="text-indent: 0.5in;">Walaupun karya sastra yang ditulisnya tidak terlalu banyak, dia hanya menulis satu puisi, tiga prosa, dan dua drama yang semuanya dimuat dalam majalah, ia justru lebih dikenal sebagai leksikograf di Indonesia. Kamusnya yang paling terkenal adalah Kamus Umum Bahasa Indonesia, yang dicetak pertama kali pada tahun 1953 dan telah dicetak ulang sebanyak sepuluh kali sampai dengan tahun 1989.</p>
+        <p style="text-indent: 0.5in;">Sabariya Poerwadarminta juga pernah menjadi redaktur Balai Pustaka bersama dengan Sutan Takdir Alisjahbana. Sabariya Poerwadarminta juga memperoleh Satya Lencana Kebudayaan dari Pemerintah Republik Indonesia atas jasanya dalam bidang kebudayaan dan bidang bahasa yang disampaikan oleh Sri Paku Alam VII kepada istrinya pada tanggal 15 Juni 1970.</p>
+        <hr>
+        <center><h4>Latar belakang keluarga</h4></center>
+        <p style="text-indent: 0.5in;">Nama kecil dari Wilfridus Joseph Sabarija Poerwadarminta (ejaan lama) adalah Sabarija (dibaca Sabariya). Dilahirkan di Jl. Gamelan Lor - Kraton, Yogyakarta. Sabarija adalah anak dari Bapak Raden Ngabehi Kudawiharja, seorang abdi dalem Kraton yang bertugas sebagai Gamel yang artinya petugas pemelihara kuda Kraton, Ibunya bekerja sebagai pembuat pola batik. Adapun Sabariya tidak memiliki saudara sekandung, berikut saudara dalam keluarganya :<br>
+        </p>Sastra Sutrasna : saudara se - ayah lain ibu - tinggal di Yogyakarta
+        Sastradihardja : saudara se - ibu lain ayah - tinggal di Jakarta
+        Wilfrida Mudjilah : saudara se - ibu lain ayah - tinggal di Purworejo
+        Sutardjana : saudara se - ibu lain ayah - tinggal di Bandung</p>
+        <hr>
+        <center><h4>Masa Kecil</h4></center>
+        <p style="text=indent: 0.5in;">Sabariya hidup ikut neneknya, dan neneknya termasuk rakyat jelata yang serba kekurangan, oleh karenanya ia tidak bisa sekolah, dan pada masa penjajahan Belanda, untuk bersekolah sangatlah tidak mungkin kerena Sabariya bukanlah keluarga bangsawan, dan bukannya dari keluarga yang berpangkat Semasa kecilnya, bila ingin bermain apa saja, maka alat-alat mainnya dibuat sendiri, sejak kecil Sabarija sudah memiliki daya kreatif tinggi.</p>
+        <p style="text-infent: 0.5in;">Pernah terjadi sewaktu kanak-kanak sekitar umur 7 tahun ia diajak orang yang tidak dikenal (istilah sekarang mungkin diculik), kemudian dilepas/dibuang di pinggiran kota Solo. Tetapi karena ia mempunyai naluri yang tinggi, jalan pikirnya bila ia mengikuti jalan kereta api ke arah barat maka akan sampai ke Yogyakarta. Berjalanlah ia menyusuri jalan KA tersebut, akhirnya sampai dekat desa Prambanan ia pingsan karena kelelahan dan tidak makan (hanya mengunyah batang tebu yang tumbuh sepanjang kebun tebu di lintasan Kereta Api). Kemudian ditolong oleh kusir andong (kereta kuda khas Yogyakarta) diantar sampai kerumahnya di jalan Gamelan. Semenjak kejadian tersebut neneknya sangat prihatin, kebetulan ada seorang pastor yang iba melihat nasib Sabariya, maka pastor tersebut meminta izin untuk mengambil Sabariya untuk di sekolahkan di Sekolah Angka Loro (Tweede Inlandsche School ) di Kintelan Yogyakarta (sekarang lokasi tersebut berada di sekitar daerah kecamatan Gondomanan) dan ia dapat menyelesaikan di sekolah tersebut pada tahun 1919.</p>
+        <p style="text-indent: 0.5in;">Selama dalam pendidikan di asrama Ambarawa, ia mempunyai prestasi belajar yang sangat mengagumkan melebihi dari teman-teman sekolahnya, ia berbakat juga di dalam seni tari, seni karawitan, dan memainkan alat musik gamelan, juga ia senang bermain drama dan pernah mendapat hadiah nomor satu pada saat ia bermain drama di sekolah tersebut. Ia sangat disukai oleh teman-teman sekolahnya karena sangat sopan, lemah lembut, jujur, tekun dan cerdas, dan ia tamat disekolah tersebut dengan predikat murid yang terpandai, lulus pada tahun 1923</p>
+        <hr>
+        <center><h4>karier</h4></center>
+        <p style="text-indent: 0.5in;">Setelah tamat Sekolah Guru, ia mendapat pekerjaan sebagai guru Sekolah Dasar Kanisius di Kumendaman – Yogyakarta, pada masa itu gaji seorang guru lulusan Normaal School hanya sekitar 27,50 gulden sedangkan lulusan Kweekschool gajinya sekitar 45 Gulden, sehingga ia sering jadi bahan ejekan para gadis-gadis.
+        
+        Karier W.J.S. Poerwadarminta mulai dirintis sejak ia bekerja sebagai guru Sekolah Dasar hingga akhir hayatnya. Ia lulus Sekolah Dasar Angka Loro (Tweede Inlandsche School) di Yogyakarta pada tahun 1919. Lulus dengan predikat baik dan nilai tertinggi dari Sekolah Guru ( Normaal School Rooms Katholiek ) Muntilan dan Ambarawa pada 25 April 1923.
+        
+        Tanggal 31 Mei 1923 di angkat menjadi guru Sekolah Dasar Kanisus di kampung Kumendaman ( sekarang lokasinya di daerah kecamatan Mantri Jeron ) di Yogyakarta. W.J.S. Poerwadarminta adalah orang yang tertib, disiplin dalam pengaturan waktu, sehingga ia sempat mengkuti kursus-kursus seperti Bahasa Belanda, Bahasa Inggris, Bahasa Perancis, Bahasa Jerman. Ia juga belajar Filsafat sekaligus memperdalam Bahasa Belanda dibawah asuhan Pater J. Van Rijkckevorsel S.J. dan belajar Sastra Jawa Kuno dibawah asuhan Pater L.C. Kock S.J mahaguru Filsafat Kolese Igantius di Yogyakarta, selain itu ia juga belajar bahasa Sanskerta dan bahasa Melayu.
+        
+        Untuk mempraktikan bahasa-bahasa yang telah dipelajari, maka ia menjadi guide bagi para wisatawan asing ( turis ) yang berkunjung di Kraton dan Tamansari di Yogyakarta, banyak para turis terkagum-kagum karena ada orang Jawa pakai blangkon , kain dan baju lurik, telanjang kaki bisa berbicara dengan fasih beberapa bahasa asing.
+        
+        Tahun 1929 W.J.S. Poerwadarminta ditugaskan mengajar di Sekolah Dasar Kanisius di Wirobrajan – Yogyakarta, disitulah ia mempunyai teman-teman yang sehaluan dan mendukung Pak Poerwa untuk mencurahkan pengetahuan tentang bahasa. Lalu didirikan organisasi Ikatan Tri Wikrama dan W.J.S. Poerwadarminta menjadi ketuanya. D isitulah ia merintis penerbitan majalah yang bernama Bausastra Jawa pemimpin redaksinya ia sendiri.
+        
+        Tahun 1930, diterbitkanlah Kamus Bahasa Jawa ( Bau Sastra Jawa ) yang disusun oleh W.J.S. Poerwadarminta dibantu oleh rekan-rekannya C.S. Hardjosoedarmo dan J.Chr. Pujosudiro. Setelah itu berturut-turut disusun buku karangan tunggal W.J.S. Poerwadarminta antara lain Serat Mardi Kawi dan novel berjudul Pacoban. Ia masih sempat dalam kesibukannya sehari-hari mengajar bahasa di Sekolah Seminari Agung dan Sekolah Tionghoa ( Maleisch Chineesche School ) di Yogyakarta.
+        
+        Buku pertamanya adalah Mardi Kawi, berisi pelajaran bahasa Kawi (1930); sedangkan kamusnya yang pertama adalah Kawi Djarwa (1931), disusul dengan Baoesastra Indonesia-Jawi, dengan penerbit Balai Pustaka. Ia juga membuat buku Puntja Bahasa Nippon yang berisi pelajaran bahasa Jepang. Ia juga pernah mengajar pada Gaikoku-go Gakko, sekolah Bahasa Asing di Tokyo (1932-1938), dan setelah kontraknya habis ia kembali ke Indonesia dan bekerja di Balai Pustaka.[1]
+        
+        Tahun 1932 ada tawaran dari Pemerintah Jepang yang mencari tenaga pengajar bahasa Indonesia, atas dorongan dari teman-temannya dan seizin orang tuanya , maka berangkatlah ia bersama istrinya dan putrinya yang masih berumur 9 bulan ( C Soetantri ) ke negara Jepang sebagai duta bangsa, d isana ia selalu menyatakan kepada orang-orang Jepang bahwa bangsa Indonesia memiliki bahasa Nasional yaitu Bahasa Indonesia. Di Jepang ia ditugaskan sebagai dosen di Guko Hugo Gakko, Tokyo dan di situ ia masih sempat mengikuti kuliah Kesusastraan Inggris dan di mengikuti kuliah di Fakultas Ekonomi Universitas Sophia.
+        
+        Tahun 1937 W.J.S. Poerwadarminta kembali ke Indonesia, dan untuk sementara waktu ia tinggal di Yogyakarta, kemudian pergi ke Batavia untuk mencari pekerjaan dan diterima menjadi pegawai di Balai Pustaka. Pada tahun 1938 di Balai Pustaka ia bersama-sama dengan temannya menerbitkan majalah Kejawen “ ia sebagai pimpinan redaksi, hal ini mendapat dukungan dari tokoh-tokoh bahasa saat itu.
+        
+        Ia ditugasi memimpin redaksi majalah mingguan Kedjawen yang diterbitkan pemerintah Hindia Belanda. Saat pendudukan Jepang, Kedjawen berhenti berproduksi, tetapi Balai Pustaka masih menerbitkan Pandji Pustaka. Pada masa tersebut ia sempat menerbitkan Kamus Harian Jepang-Indonesia.[1]
+        
+        Tahun 1942 pada masa pendudukan Jepang, ia dicari-cari oleh bala tentara Jepang karena ia dianggap bisa menjadi penterjemah bahasa Jepang, maka ia diangkat sebagai juru bahasa di kantor Kempetai. Dan ia diberi tugas untuk menyusun Kamus Bahasa Jepang dan buku-buku pelajaran bahasa Jepang, maka diterbitkanlah buku “ Poentjak Bahasa Nippon “ susunan W.J.S. Poerwadarminta. Meskipun dalam keadaan sibuk, ia masih sempat mengajar di sekolah-sekolah di Jakarta untuk bahasa Jepang dan mengajar di Sekolah Teknik di Bandung.
+        
+        Tanggal 7 Maret 1946 dengan surat keputusan No 183/Bhg. Oemum, terbitlah surat keputusan Kepala Departemen Pengajaran dan Kebudayaan atas nama Presiden Republik Indonesia terhitung 28 Februari 1946 ia ditugaskan di Kantor Musium Jakarta, membantu Volkslectuur bagian Bibliotheek. Disamping tugas di kantor tersebut ia masih memberikan kuliah beberapa Perguruan Tinggi di Jakarta .
+        
+        Tanggal 1 Juni 1949 berdasarkan surat keputusan No 50/P.K.F/L.B.K/U.P W.J.S. Poerwadarminta dianggkat sebagai pembantu dalam bidang Ilmu Pengetahuan, untuk sementara ditugaskan untuk bidang Kamus Melayu pada Lembaga Penyelidikan Bahasa dan Kebudayaan dari Fakultet Kesusastraan dan Filsafat dari Balai Perguruan Tinggi Republik Indonesia Serikat.
+        
+        Tanggal 10 Januari 1953 berdasarkan surat keputusan No 1075/C.III, W.J.S. Poerwadarminta ditugaskan di Lembaga Bahasa dan Budaya Fakultas Sastra dan Filsafat Universitas Indonesia di Jakarta di Bagian Leksikografi, di situlah ia menyusun Kamus Umum Bahasa Indonesia ( KUBI ) dan diterbitkan pada tahun 1954. Dan Kamus Umum Bahasa Indonesia susunan W.J.S. Poerwadarminta dijadikan sebagai kamus standar bahasa Indonesia, hingga terbitnya Kamus Besar Bahasa Indonesia Pusat Bahasa.
+        
+        Dia pernah dicalonkan untuk menerima gelar Honoris Causa, tetapi ditolaknya, dan oleh pemerintah ia diberi penghargaan Satya Lencana Kebudayaan (1969). Jabatan terakhirnya adalah sebagai pegawai Lembaga Penyelidikan Bahasa dan Kebudayaan. Karya terbesarnya adalah Kamus Umum Bahasa Indonesia dan Kamus Bahasa Latin yang disusun bersama drs. K. Prent CM dan drs. J. Adisubrata.[1]
+        
+        Prof. Dr. A Teeuw memberi kesan terhadap Kamus Umum Bahasa Indonesia susunan W.J.S. Poerwadarminta sebagai berikut :
+        
+        Of the Indonesia explanatory dictionaries, Poerwadarminta’s Kamus Umum (1952 ) deserves mention before all others : a standard work, Coming right at the beginning of the history of Bahasa Indonesia lexicography, and excelling in the large number of well chosen examples of the use of words. The dictionary by Zain is bay no means so good.
+        <hr>
+        <center><h4>Karya</h4></center>
+       <p><li> Buku (kamus, novel)
+        
+        <li>Bausastra Jawa (1930)
+        <li>Mardi Kawi (1930)
+        <li>Kawi Djarwa (1931)
+        <li>Baoesastra Indonesia-Jawi
+        <li>Puntja Bahasa Nippon
+        <li>Kamus Harian Jepang-Indonesia
+        Pacoban (novel)
+        <li>Kamus Umum Bahasa Indonesia (1954)
+        Kamus Bahasa Latin
+        Karya sastra lainnya:
+        <p>puisi Di Mana Tempat Bahagia, prosa Tiga Kelamin, prosa Membela Kewadjiban, prosa Sadar akan Dirinja, drama Azaz Hidup, dan drama Bangsacara dan Ragapadmi.</p>
+        <p style="text-indent: 0.5in;">Atas seizin orang tuanya Sabariya , ia melanjutkan pendidikannya di Sekolah Guru (Normal School Rooms Katholiek) di Moentilan sampai kelas dua, dan dilanjutkan lagi di Ambarawa sampai kelas tiga, biaya pendidikan di sekolah tersebut ditanggung oleh Gereja Katolik. Mulai saat itulah ia mengenal dan belajar agama Katolik.
+<div class="atas"><a href="#" title="Back To Top">&#8657;</a></div></p>
+        </div>
+        <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Prof. Dr. PJ Zoetmulder, S.J </button>
+          <div id="Demo3" class="w3-hide w3-container">
+          <p class="w3-center"><img src="images/piet.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+            <center><h4>Prof. Dr. Petrus Josephus Zoetmulder, S.J</h4></center>
+            <p style="text-indent:0.5in;">Lahir di Utrecht, Belanda, 29 Januari 1906 – meninggal di Yogyakarta, 8 Juli 1995 pada umur 89 tahun. 
+            Beliau adalah seorang pakar Sastra Jawa dan budayawan Indonesia.</p> 
+            <p style="text-indent: 0.5in;"> beliau juga terkenal dengan prestasinya mengenai penelitian tentang sebuah aspek agama Kejawen yang dalam edisi Indonesianya berjudul: "Manunggaling Kawula Gusti." Selain itu nama Zoetmulder tidak dapat dilepaskan dari telaah sastra Jawa Kuno Kalangwan dan kamus Jawa Kunanya yang terbit dalam dua edisi, yaitu edisi Bahasa Inggris (1982) dan edisi Bahasa Indonesia (1995).
+            
+            Pastor Petrus Josephus Zoetmulder SJ
+            
+            Piet Zoetmulder
+            Gereja	Gereja Katolik Roma
+            Keuskupan	Semarang
+            Penugasan
+            Penahbisan	1938
+            Data diri
+            Nama lahir	Petrus Josephus Zoetmulder
+            Lahir	29 Januari 1906
+            Utrecht, Belanda
+            Wafat	8 Juli 1995 (umur 89)
+            Yogyakarta, Indonesia
+            Kewarganegaraan	 Indonesia
+            Denominasi	Katolik Roma
+            Kediaman	Keuskupan Agung Semarang<p>
+<p style="text-indent: 0.5in;">ELS, Nijmegen, Negeri Belanda (1981)
+            Gymnasium Kanisius Kolese dan Gymnasium Rolduc, Negeri Belanda, (1925)
+            Novisiat Serikat Yesus, Negeri Belanda (1925)
+            Kolese Ignatius, Yogya (1928)
+            Studi Jawa di Universitas Leiden, Negeri Belanda (1930)
+            Universitas Leiden, Negeri Belanda (doktor, 1935)
+            Studi teologi, Maatstricht, Negeri Belanda (1939)</p>
+<hr>
+<center><h4>Karier</h4></center>
+<p style="text-indent: 0.5in;"> Ditahbiskan menjadi Imam Katolik di Negeri Belanda (1938).  
+Mengajar di Seminari Menengah, Yogya (1925) Administrator Apostolis, Jakarta (1925) Guru AMS, Yogya (1940)
+Diinternir Militer Jepang (1943-1945)
+Diinternir tentara Republik di Pundong (1946)
+Dosen Fakultas Sastra UGM (sejak 1951) kemudian guru besar</p>
+            <hr>
+<center><h4>Penghargaan</h4></center>
+<p style="text-indent: 0.5in;">Presiden Joko Widodo atas nama negara memberikan Tanda Kehormatan Bintang Budaya Parama Dharma kepada dedikasi Zoetmulder. Acara penyematan berlangsung di Istana Negara. Jakarta, 13 Agustus 2015.</p>
+<hr>
+<center><h4>biografi</h4></center>
+<p class="w3-center"><img src="images/piet1.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+<p style="text-indent: 0.5in;">	Masa kecil	
+Lahir di Utrecht, Negeri Belanda, Piet kecil sudah belajar membaca dan menulis sejak sebelum mengenal bangku sekolah. Ibunya, Catharina Noelege, seorang pemain piano profesional, adalah gurunya yang penyabar. Sehingga ketika Piet masuk Sekolah Dasar, tanpa melalui TK lebih dulu, ia praktis sudah pandai membaca dan menulis. Piet memang dikenal sebagai murid yang rajin, berbakat, dan cerdas.
+Saat duduk di bangku Gymnasium (semacam SMU) College Kanisius, putra seorang insinyur itu mulai tertarik untuk menjadi pastur dan terutama Imam Yesuit. Hal ini tak aneh, karena keluarganya tercatat sebagai penganut agama Katolik yang taat. Dua pamannya adalah pastor, sedang bude dan bibinya menjadi suster di Afrika dan Suriname. Ketika ayahnya, yang bekerja sebagai inspektur kesehatan umum, pindah ke Heerlen, Piet sempat kecewa karena di situ tidak ada gymnasium. Untung, orangtuanya membolehkan si anak bungsu masuk gymnasium di kota Rolduc, yang kebetulan bekas sekolah ayahnya. Ia mengikuti ujian jurusan A dan B, dan keduanya ia lalui dengan berhasil. Pada 1925, Piet masuk Novisiat Serikat Yesus, pendidikan awal calon Imam Yesuit.</p>
+<center><h4>Pergi ke tanah Jawa</h4></center>
+<p class="w3-center"><img src="images/piet2.png" class="w3-normal" style="height:106px;width:106px" alt="Avatar"></p>
+<p style="text-indent: 0.5in;">Piet Zoetmulder pada masa muda.Pastur J. Willekens S.J., yang mengasuhnya di novisat menganjurkan Piet bekerja untuk karya misi di Jawa, setelah pendidikannya rampung. Anjuran itu dipatuhinya, dan Piet masih berusia 19 tahun ketika menuju ke Hindia Belanda. Ia segera ditempatkan di Seminari Menengah di Yogyakarta. Tidak diduga, tiga tahun kemudian Pastur Willekens sendiri menyusul ke Jawa untuk menjadi Visitor Apostolis. Setelah bertemu dengannya, Willekens berkata, "Di samping filsafat, kamu juga harus belajar bahasa Jawa Kuno." Dia lalu dihubungkan dengan Prof. C.C. Berg, yang mengajar di Surakarta, yang bisa membantunya studi Jawa Kuno. Pada tahun 1931, Zoet lulus dengan predikat cum laude, dan bersamaan dengan itu ditahbiskan sebagai calon pastor di Girisonta, Ungaran, Kabupaten Semarang.
+<center><hr>Pendidikan lanjutan</center></p>	
+<p style="text-indent: 0.5in;"> Pendalaman lebih jauh ia lakukan di Universitas Leiden, Negeri Belanda. Di sini dia meraih gelar sarjana muda dalam setahun, lazimnya tiga tahun, dan sarjana penuh, dalam bidang Sejarah Jawa dan Purbakala, juga dalam satu tahun. Pada bulan Oktober 1935, dengan bimbingan Prof. C.C. Berg, Zoetmulder mempertahankan disertasi doktoratnya, Pantheïsme en Monisme in de Javaansche Soeloek Literatuur, dengan predikat cum laude. Romo Zoet, demikian ia akrab dipanggil, merasa harus merampungkan studi teologinya dulu sebelum kembali ke Jawa. Empat tahun dia belajar di Maastricht. Menjelang pulang ke Hindia Belanda, dia masih harus menjalani masa tertiat (masa pendidikan dan pendalaman rohani selama setahun), di Belgia. Tetapi, serbuan pasukan Nazi Jerman ke negeri itu memaksa Romo mengungsi ke Perancis, Juni 1940.Ia kemudian berhasil mendapatkan kapal yang menuju ke Hindia Belanda, tetapi mendarat di Inggris demi menghindari ranjau yang dipasang Jerman di lintas pelayaran. Bulan berikutnya Romo Zoet baru berhasil tiba di Jawa, lewat Hong Kong. Padahal, ada rekannya yang tewas bersama kapal yang tenggelam ditorpedo Angkatan Laut Jerman. "Tuhan menghendaki saya berbahagia di Tanah Jawa", ujarnya.</p>
+        <hr>
+<center><h4>Zaman pendudukan Jepang dan pasca-Perang Dunia II</h4></center>
+<p class="w3-center"><img src="images/adipurwa.png" class="w3-normal" style="height:106px;width:106px" alt="Avatar"></p>
+<center><h2>Gambar sampul De Taal van het Adiparwa, edisi tahun 1983.</h2></center>
+<p style="text-indent: 0.5in;">Tiba di Jakarta, Romo ditawari mengajar ilmu perbandingan bahasa di Fakultas Sastra UI. Tetapi,dorongan untuk lebih mendalami bahasa Jawa membuatnya memilih menetap di Yogyakarta. Ia lalu mengajar di AMS, dan muridnya antara lain Prof. Dr. Koentjaraningrat, Dr. Sukmono dan Dr. S. Supomo.Saat Jepang masuk Indonesia pada tahun 1942, Zoetmulder termasuk warga Belanda yang ditahan. Dia beruntung, karena selama ditahan buku dan pena masih boleh ia bawa. Namun saat dipindahkan ke penjara Cimahi, ia berhasil menyelundupkan buku Adiparwa suntingan Dr. H.H. Juynboll dan sebuah kamus bahasa Jawa karangan Gericke-Roorda. Zoetmulder berusaha meneliti tatabahasa Jawa Kuno dari buku ini. Kelak buku tatabahasa Jawa Kuno diterbitkan dalam bahasa Belanda (De Taal van het Adiparwa) pada tahun 1950 dan edisi bahasa Indonesianya (Bahasa Parwa) diterbitkan pada tahun 1954 dengan bantuan I.R. Poedjawijatna. Buku ini kelak menjadi acuan dasar mahasiswa studi Jawa Kuno. Pada zaman Revolusi Fisik (Perang atau Revolusi Kemerdekaan Indonesia antara tahun 1945-1950), sebagai seorang Belanda, Romo Zoet nyaris dibunuh oleh seorang laskar di Pastoran Kemetiran, Yogyakarta. Namun untung ada seorang Jawa yang membelanya dan berkata bahwa dia adalah "orang suci". Karier akademis. Setelah lolos dari tahanan interniran Baros pada tahun 1945, dia mulai mengajar di Universitas Gadjah Mada (UGM). Lima tahun kemudian, berdasarkan Surat Keputusan Mendikbud, ia diangkat menjadi Guru Besar Luar Biasa pada Fakultas Sastra Pedagogik, Filsafat UGM. Pada tahun 1955, ia dikukuhkan sebagai Guru Besar Tetap Fakultas Sastra UGM. Saat itu dia telah menanggalkan kewarganegaraan Belandanya. Sehari-hari tugasnya menjadi lebih berat karena harus mewakili Dekan Fakultas Sastra Prof. Dr. R.M. Ng. Poerbatjaraka, yang lebih banyak berada di Jakarta. Ini masih ditambah tugas lain, menjadi guru bahasa Jawa Kuno untuk wilayah Yogya. Pertama memberi kuliah, Zoetmulder memakai bahasa Jawa. Tapi kemudian dia menyadari, mahasiswanya banyak yang berada dari luar Jawa. Ia pun kemudian menulis buku panduan berjudul Sekar Sumawur: Bunga rampai bahasa Djawa Kuno. Kemudian untuk membantu kesulitan itu, Zoet bermaksud membuat kamus bahasa Jawa Kuno. Kamus ini mulai dikerjakannya sejak tahun 1950. Semula ia yakin, sepuluh tahun adalah waktu yang ia butuhkan, tetapi kenyataan berbicara lain. Bukunya yang mengupas kehidupan empu dan sastra Jawa Kuno Kalangwan akhirnya terbit pada tahun 1974, disusul dengan Old Javanese-English Dictionary pada tahun 1982. Dalam menulis buku-bukunya, Zoetmulder mengaku kesulitan karena harus mengumpulkan naskah dari mikrofilm dari Universitas Leiden.</p>
+<hr>
+<center><h4>Akhir hayat</h4></center>	
+<p class="w3-center"><img src="images/makam.png" class="w3-normal" style="height:106px;width:106px" alt="Avatar"></p>
+<center>Gereja di Muntilan di mana Zoetmulder dimakamkan.</center>
+<p class="w3-center"><img src="images/nisan.png" class="w3-normal" style="height:106px;width:106px" alt="Avatar"></p>
+<center>Batu nisan Zoetmulder dengan sebuah kalimat dalam bahasa Jawa Kuno yang diambil dari Kakawin Sumanasantaka, pupuh XXVIII bait 11:"Wiku haji jěněk angher ing śūnya" ("Pendeta raja dengan nyaman bersemayam di ke-tiada-an.").</center> 
+<p>Prof. Zoetmulder meninggal dunia pada tanggal 8 Juli 1995 di pastoran Kemetiran, Yogyakarta. Jenazah dia lalu dimakamkan di pemakaman di gereja di Muntilan, Kabupaten Magelang, Jawa Tengah.</p>
+<p align="right">sumber: Wikipedia</p>
+          </div>
+          <button onclick="myFunction('Demo4')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Dokumentasi1</button>
+          <div id="Demo4" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/fjords.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+        </div>
+         <button onclick="myFunction('Demo5')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Dokumentasi2</button>
+         <div id="Demo5" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+          <div class="w3-half">
+            <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+          </div>
+          <div class="w3-half">
+            <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+          </div>
+          <div class="w3-half">
+            <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+          </div>
+          <div class="w3-half">
+            <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+          </div>
+          <div class="w3-half">
+            <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+          </div>
+          <div class="w3-half">
+            <img src="/w3images/fjords.jpg" style="width:100%" class="w3-margin-bottom">
+            </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">News</span>
+            <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+            <span class="w3-tag w3-small w3-theme">Games</span>
+            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">Papan Pasinaon</h6>
+              <p contenteditable="true" class="w3-border w3-padding"><a href=”sms:+6281216230589?body=Saya%20Order”></a>Status: Feeling Blue</p>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <center><h5>Jahnī yāhniṅ talaga kadi laṅit</h5></center>
+</footer>
+
+<footer class="w3-container w3-theme-d5">
+  <p>Powered by <a href="https://cakrik-lawas.blogspot.com" target="_blank">Wong_Turian</a></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<div class="atas"><a href="#" title="Back To Top">&#8657;</a></div>
+
+</body>
+</html> 
